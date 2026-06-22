@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="light">
+<html lang="fr" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laurence Sangouard – Performance Commerciale & Organisation PME</title>
-  <meta name="description" content="Laurence Sangouard – Conseil et formation en performance commerciale, management et organisation pour PME/TPE. Fondatrice d'IMPULSION 360." />
+  <meta name="description" content="Laurence Sangouard – Conseil et formation en performance commerciale, management et organisation pour PME/TPE. Fondatrice d'Impulsion &amp; Process." />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
     /* ─── Variables ─── */
     :root {
-      --bg: #f8f7f4;
+      --bg: #eef7fa;
       --bg2: #ffffff;
-      --bg3: #f0ede7;
+      --bg3: #dff0f5;
       --surface: #ffffff;
-      --border: #e2ddd6;
-      --text: #1a1714;
-      --text2: #5a534a;
-      --text3: #8a8078;
-      --accent: #b5722a;
-      --accent2: #8a5520;
-      --accent-soft: #f5ebe0;
-      --navy: #1e2d4a;
-      --gold: #c9922f;
-      --gold-light: #f0d5a8;
-      --shadow: 0 2px 16px rgba(26,23,20,.08);
-      --shadow-lg: 0 8px 40px rgba(26,23,20,.14);
+      --border: #b8dce8;
+      --text: #1a1e2b;
+      --text2: #3a4e5c;
+      --text3: #6a8a9a;
+      --accent: #009ab8;
+      --accent2: #007a90;
+      --accent-soft: #d8f2f8;
+      --navy: #1a1e2b;
+      --gold: #00b4d4;
+      --gold-light: #b8e8f4;
+      --shadow: 0 2px 16px rgba(0,100,140,.08);
+      --shadow-lg: 0 8px 40px rgba(0,100,140,.16);
       --radius: 12px;
       --radius-lg: 20px;
       --transition: .25s cubic-bezier(.4,0,.2,1);
     }
     [data-theme="dark"] {
-      --bg: #0f0d0b;
-      --bg2: #181512;
-      --bg3: #221e1a;
-      --surface: #1e1a16;
-      --border: #2e2820;
-      --text: #f0ede7;
-      --text2: #b5a99a;
-      --text3: #7a6e62;
-      --accent: #d4894e;
-      --accent2: #e8a06a;
-      --accent-soft: #2a1f14;
-      --navy: #c4d4f0;
-      --gold: #d4a44c;
-      --gold-light: #2e2010;
+      --bg: #1a1e2b;
+      --bg2: #1e2333;
+      --bg3: #242938;
+      --surface: #1e2333;
+      --border: #2a3348;
+      --text: #ffffff;
+      --text2: #a0bcc8;
+      --text3: #5a7a8a;
+      --accent: #00b4d4;
+      --accent2: #00d4f4;
+      --accent-soft: rgba(0,180,212,.12);
+      --navy: #00b4d4;
+      --gold: #00c8e8;
+      --gold-light: rgba(0,180,212,.15);
       --shadow: 0 2px 16px rgba(0,0,0,.3);
       --shadow-lg: 0 8px 40px rgba(0,0,0,.5);
     }
@@ -72,12 +72,12 @@
     /* ─── Nav ─── */
     #nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(248,247,244,.92);
+      background: rgba(238,247,250,.92);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       transition: background var(--transition), box-shadow var(--transition);
     }
-    [data-theme="dark"] #nav { background: rgba(15,13,11,.92); }
+    [data-theme="dark"] #nav { background: rgba(26,30,43,.92); }
     #nav.scrolled { box-shadow: var(--shadow); }
     .nav-inner {
       max-width: 1100px; margin: 0 auto;
@@ -139,13 +139,13 @@
     .hero-bg {
       position: absolute; inset: 0; z-index: 0;
       background:
-        radial-gradient(ellipse 60% 50% at 70% 40%, rgba(181,114,42,.08) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 60% at 20% 80%, rgba(30,45,74,.06) 0%, transparent 60%);
+        radial-gradient(ellipse 60% 50% at 70% 40%, rgba(0,180,212,.08) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 20% 80%, rgba(0,100,140,.06) 0%, transparent 60%);
     }
     [data-theme="dark"] .hero-bg {
       background:
-        radial-gradient(ellipse 60% 50% at 70% 40%, rgba(212,137,78,.12) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 60% at 20% 80%, rgba(196,212,240,.06) 0%, transparent 60%);
+        radial-gradient(ellipse 60% 50% at 70% 40%, rgba(0,180,212,.15) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 20% 80%, rgba(0,100,140,.10) 0%, transparent 60%);
     }
     .hero-inner {
       max-width: 1100px; margin: 0 auto; width: 100%;
@@ -303,7 +303,7 @@
       margin-bottom: 8px;
     }
     .stat-label { font-size: .85rem; color: var(--text3); font-weight: 500; line-height: 1.4; }
-    .stat-card.featured { background: linear-gradient(135deg, var(--accent), var(--gold)); border-color: transparent; }
+    .stat-card.featured { background: linear-gradient(135deg, #007a90, #00b4d4); border-color: transparent; }
     .stat-card.featured .stat-number, .stat-card.featured .stat-label { color: #fff; }
     .values-list { margin-top: 28px; }
     .values-list h4 { font-size: .875rem; font-weight: 700; color: var(--text3); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 16px; }
@@ -415,17 +415,17 @@
     .timeline-current::before { content: ''; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; animation: pulse 1.5s infinite; }
     @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .4; } }
 
-    /* ─── IMPULSION 360 ─── */
+    /* ─── Impulsion &amp; Process ─── */
     #impulsion {
-      background: linear-gradient(135deg, #1e2d4a 0%, #2d4068 100%);
+      background: linear-gradient(135deg, #0d1a2e 0%, #1a2e40 100%);
       color: #fff;
       position: relative; overflow: hidden;
     }
     [data-theme="dark"] #impulsion {
-      background: linear-gradient(135deg, #0d1625 0%, #1a2840 100%);
+      background: linear-gradient(135deg, #0d1218 0%, #0d2030 100%);
     }
     #impulsion::before {
-      content: '360';
+      content: '&';
       position: absolute; right: -40px; top: -40px;
       font-family: 'Space Grotesk', sans-serif;
       font-size: 16rem; font-weight: 900;
@@ -642,7 +642,7 @@
         <li><a href="#about">Profil</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#experience">Parcours</a></li>
-        <li><a href="#impulsion">Impulsion 360</a></li>
+        <li><a href="#impulsion">Impulsion &amp; Process</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-actions">
@@ -656,7 +656,7 @@
       <a href="#about">Profil</a>
       <a href="#services">Services</a>
       <a href="#experience">Parcours</a>
-      <a href="#impulsion">Impulsion 360</a>
+      <a href="#impulsion">Impulsion &amp; Process</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -713,7 +713,7 @@
             terrain et outils de gestion modernes (CRM, IA, automatisations).
           </p>
           <p>
-            Aujourd'hui, au travers d'<strong>IMPULSION 360</strong>, je propose des missions courtes
+            Aujourd'hui, au travers d'<strong>Impulsion &amp; Process</strong>, je propose des missions courtes
             et ciblées pour accompagner les dirigeants de PME/TPE dans le développement et la
             structuration de leur activité.
           </p>
@@ -930,13 +930,13 @@
     </div>
   </section>
 
-  <!-- IMPULSION 360 -->
+  <!-- Impulsion &amp; Process -->
   <section id="impulsion">
     <div class="section-inner">
       <div class="impulsion-grid">
         <div class="impulsion-left reveal">
           <span class="section-eyebrow">Actualité</span>
-          <h2 class="imp-title">IMPULSION <span>360</span></h2>
+          <h2 class="imp-title">Impulsion <span>&amp; Process</span></h2>
           <p>
             Projet actif en cours de lancement, accompagné par le programme
             <strong style="color:#c9922f;">HEC STAND UP</strong> qui soutient les
@@ -1133,7 +1133,7 @@
         <a href="#about">Profil</a>
         <a href="#services">Services</a>
         <a href="#experience">Parcours</a>
-        <a href="#impulsion">Impulsion 360</a>
+        <a href="#impulsion">Impulsion &amp; Process</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="footer-actions">
@@ -1149,7 +1149,7 @@
     // Theme
     const root = document.documentElement;
     const btn = document.getElementById('themeToggle');
-    const saved = localStorage.getItem('theme') || 'light';
+    const saved = localStorage.getItem('theme') || 'dark';
     root.setAttribute('data-theme', saved);
     btn.textContent = saved === 'dark' ? '☀️' : '🌙';
     btn.addEventListener('click', () => {
